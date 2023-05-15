@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import MealCard from './components/MealCard/mealCard';
+// import Header from './components/Header/header';
+// import Home from "./pages/Home/home";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+   return (
+      <div className="App">
+
+         <header className="header">
+            The Meal
+         </header>
+
+         <MealCard />
+
+         <form className='search-form'>
+            <div className='container'>
+               <div className='search-form__content'>
+                  <h2 className='search-form title'>Find your Meal</h2>
+                  <div className='search-form__box'>
+                     <input className='search-form__input' type="text" placeholder='Find your meal' />
+                     <button className='search-form__button'>Search</button>
+                  </div>
+               </div>
+            </div>
+         </form>
+
+      </div>
+   );
 }
 
 export default App;
