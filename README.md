@@ -1,9 +1,9 @@
 # neobis_front_themeal
 ---
 ### Ссылка: 
-<!-- [клик](https://akmatovbaktybek.github.io/neobis_front_toDoList/) -->
+[клик](https://golden-mochi-25bc30.netlify.app/)
 ---
-<!-- ![](img/preview.jpg) -->
+![](/src/assets/img/prew.jpg)
 ---
 ### Сборка репозитория и локальный запуск:
 ---
@@ -13,4 +13,6 @@
 git clone https://github.com/akmatovbaktybek/neobis_front_themeal.git
 
 npm install
+
+npm start
 ```
