@@ -19,6 +19,13 @@ body {
    line-height: 32px;
 }
 
+.meal__img {
+   max-width: 450px;
+   border-radius: 8px;
+   box-shadow: 10px 12px 29px -14px rgba(0,0,0,.75);
+   object-fit: cover;
+}
+
 .header {
    background-color: #D49726;
    height: 80px;
@@ -63,13 +70,6 @@ body {
    font-size: 18px;
 }
 
-.random-meal__img {
-   max-width: 450px;
-   border-radius: 8px;
-   box-shadow: 10px 12px 29px -14px rgba(0,0,0,.75);
-   object-fit: cover;
-}
-
 .search-form {
    margin-top: 30px;
 }
@@ -106,6 +106,37 @@ body {
    cursor: pointer;
 }
 
+.meals-list {
+   margin-bottom: 50px;
+}
+
+.meals-list__item {
+   border-bottom: 2px solid #000;
+   padding: 0 80px 30px 80px;
+   margin-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.meals-list__item-description {
+   text-align: center;
+}
+
+.meals-list__item-title {
+   max-width: 250px;
+   font-size: 26px;
+   font-weight: 700;
+}
+
+.meals-list__item-country-category {
+   margin-top: 10px;
+   font-size: 18px;
+}
+
+
+
 @media screen and (max-width: 1024px) {
    .random-meal__content {
       flex-wrap: wrap;
@@ -113,16 +144,22 @@ body {
    .random-meal__img {
    max-width: 380px;
    }
-}
-
-@media screen and (max-width: 768px) {
    .random-meal__img {
       margin-top: 50px;
    }
+
+   .meals-list__item-description {
+      margin-top: 20px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
 }
 
 @media screen and (max-width: 425px) {
-   .random-meal__img {
+   .meal__img {
    max-width: 300px;
    }
 }
+

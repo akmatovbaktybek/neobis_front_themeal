@@ -1,10 +1,10 @@
 
 const Header = () => {
-   <header className="header">
-      <h2 className="header__title">
+   return (
+      <header className="header">
          The Meal
-      </h2>
-   </header>
-}
+      </header>
+   );
+};
 
 export default Header;
