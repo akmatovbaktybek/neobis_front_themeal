@@ -154,7 +154,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
+   .meals-list__item {
+      justify-content: center;
+   }
 }
 
 @media screen and (max-width: 425px) {
