@@ -11,7 +11,7 @@ const Recipe = () => {
 
    useEffect(() => {
       getMealByIdData(id)
-   }, []);
+   }, [id]);
 
    const getMealByIdData = async (id) => {
       const data = await getMealById(id);
