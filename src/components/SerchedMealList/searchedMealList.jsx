@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { getMealByWord } from "../../api/api"
+import { Link } from "react-router-dom";
+
 
 const SearchedMealList = () => {
    const [meal, setMeal] = useState([]);
@@ -49,7 +51,7 @@ const SearchedMealList = () => {
                            <img className="meals-list__item-img meal__img" src={meal.strMealThumb} alt="food img" />
                            <div className="meals-list__item-description">
                               <div className="meals-list__item-title">
-                                 {meal.strMeal}
+                                 <Link to="/recipe">{meal.strMeal}</Link>
                               </div>
                               <div className="meals-list__item-country-category">
                                  {meal.strCategory} | {meal.strArea}

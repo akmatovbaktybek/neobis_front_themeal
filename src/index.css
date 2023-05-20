@@ -7,6 +7,12 @@ body {
    -moz-osx-font-smoothing: grayscale;
 }
 
+ul, ol {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
 .container {
    max-width: 1200px;
    padding: 0 15px;
@@ -17,6 +23,13 @@ body {
    margin: 0;
    font-size: 28px;
    line-height: 32px;
+}
+
+.meal__title {
+   margin: 30px 0;
+   color: #D49726;
+   font-size: 44px;
+   line-height: 48px;
 }
 
 .meal__img {
@@ -57,13 +70,7 @@ body {
 
 .random-meal__link {
    text-decoration: none;
-}
-
-.random-meal__title {
-   margin: 30px 0;
-   color: #D49726;
-   font-size: 44px;
-   line-height: 48px;
+   color: #000;
 }
 
 .random-meal__category-country {
@@ -110,9 +117,14 @@ body {
    margin-bottom: 50px;
 }
 
+.meal-list__link {
+   text-decoration: none;
+   color: #000;
+}
+
 .meals-list__item {
    border-bottom: 2px solid #000;
-   padding: 0 80px 30px 80px;
+   padding: 0 120px 30px 120px;
    margin-top: 50px;
    display: flex;
    flex-wrap: wrap;
@@ -135,27 +147,83 @@ body {
    font-size: 18px;
 }
 
+.recipe__info {
+   margin-top: 50px;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   padding: 0 50px;
+}
+
+.recipe__info-country-category {
+   text-align: center;
+   font-size: 18px;
+}
+
+.recipe__info-list {
+   margin-top: 15px;
+}
+
+.recipe__instruction {
+   margin-top: 50px;
+}
+
+.recipe__instruction-title {
+   text-align: center;
+}
+
+.recipe__instruction-description {
+   font-size: 18px;
+}
+
+.recipe__watch-btn {
+   margin: 50px 0px 40px 0px;
+}
+
+.recipe__btn {
+   background-color: red;
+   text-decoration: none;
+   border: none;
+   border-radius: 8px;
+   outline: none;
+   padding: 15px 25px;
+   color: #fff;
+   font-weight: 700;
+   font-size: 18px;
+}
 
 
 @media screen and (max-width: 1024px) {
    .random-meal__content {
       flex-wrap: wrap;
    }
-   .random-meal__img {
+   .meal__img  {
    max-width: 380px;
    }
-   .random-meal__img {
+   .meal__img  {
       margin-top: 50px;
    }
-
    .meals-list__item-description {
       margin-top: 20px;
+   }
+   .recipe__info {
+      margin: 0;
    }
 }
 
 @media screen and (max-width: 768px) {
    .meals-list__item {
       justify-content: center;
+   }
+   .recipe__info {
+      flex-direction: column-reverse;
+      justify-content: center;
+   }
+   .recipe__info-list {
+      text-align: center;
+   }
+   .recipe__watch-btn {
+      text-align: center;
    }
 }
 
